@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/star.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0c" />
+    <title>Gabriel Accetta — Software Engineer</title>
+    <meta
+      name="description"
+      content="Gabriel Accetta — software engineer crafting calm, resilient systems for ambitious products."
+    />
+    <meta property="og:title" content="Gabriel Accetta — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Crafting calm, resilient systems for ambitious products."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <span class="preloader__label mono">GABRIEL ACCETTA</span>
+        <span class="preloader__count mono" id="preloaderCount">00</span>
+      </div>
+      <div class="preloader__bar"><span class="preloader__fill" id="preloaderFill"></span></div>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <div class="cursor__dot"></div>
+      <div class="cursor__ring"></div>
+    </div>
+
+    <!-- Grain / vignette overlays -->
+    <div class="overlay-grain" aria-hidden="true"></div>
+    <div class="overlay-vignette" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <a href="#top" class="header__logo mono" data-cursor="hover">
+        GA<span class="dot">.</span><span class="muted">2026</span>
+      </a>
+      <nav class="header__nav mono" aria-label="Primary">
+        <a href="#work" data-cursor="hover">Work<sup>01</sup></a>
+        <a href="#about" data-cursor="hover">About<sup>02</sup></a>
+        <a href="#expertise" data-cursor="hover">Expertise<sup>03</sup></a>
+        <a href="#contact" data-cursor="hover">Contact<sup>04</sup></a>
+      </nav>
+      <div class="header__meta mono">
+        <span id="clock">—:—:—</span>
+        <span class="muted">SÃO PAULO, BR</span>
+      </div>
+      <button class="header__menu mono" id="menuToggle" aria-label="Toggle menu" data-cursor="hover">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot mono">
+        <span>SÃO PAULO, BR</span>
+        <a href="mailto:hello@gabrielaccetta.dev">hello@gabrielaccetta.dev</a>
+      </div>
+    </div>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <canvas class="hero__canvas" id="starfield" aria-hidden="true"></canvas>
+
+        <div class="hero__grid">
+          <p class="hero__eyebrow mono reveal">
+            <span class="star">✶</span> Independent Software Engineer
+          </p>
+
+          <h1 class="hero__title">
+            <span class="hero__line"><span class="hero__word" data-word>Gabriel</span></span>
+            <span class="hero__line hero__line--accent">
+              <span class="hero__word italic" data-word>Accetta</span>
+            </span>
+          </h1>
+
+          <p class="hero__tagline reveal">
+            Calm, resilient systems<br />for ambitious products.
+          </p>
+
+          <p class="hero__years mono reveal">( 2017 &mdash; 2026 )</p>
+        </div>
+
+        <div class="hero__foot mono">
+          <span class="hero__status reveal"
+            ><span class="pulse"></span> Available &mdash; Q3 2026</span
+          >
+          <span class="hero__coords reveal">23.5505&deg; S / 46.6333&deg; W</span>
+          <button class="hero__scroll reveal" data-scroll-to="#work" data-cursor="hover">
+            Scroll <span class="arrow">&darr;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <span class="marquee__group">
+            <span>TypeScript</span><i>✶</i><span>React</span><i>✶</i><span>Node.js</span><i>✶</i>
+            <span>Distributed Systems</span><i>✶</i><span>Cloud Architecture</span><i>✶</i>
+            <span>Design Systems</span><i>✶</i><span>Go</span><i>✶</i><span>Rust</span><i>✶</i>
+            <span>WebGL</span><i>✶</i><span>Observability</span><i>✶</i>
+          </span>
+          <span class="marquee__group">
+            <span>TypeScript</span><i>✶</i><span>React</span><i>✶</i><span>Node.js</span><i>✶</i>
+            <span>Distributed Systems</span><i>✶</i><span>Cloud Architecture</span><i>✶</i>
+            <span>Design Systems</span><i>✶</i><span>Go</span><i>✶</i><span>Rust</span><i>✶</i>
+            <span>WebGL</span><i>✶</i><span>Observability</span><i>✶</i>
+          </span>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="work" id="work">
+        <div class="section-head">
+          <p class="section-head__eyebrow mono reveal">
+            <span class="star">✶</span> 01 &mdash; Selected Work
+          </p>
+          <h2 class="section-head__title reveal">
+            Four projects,<br /><span class="italic muted">countless commits.</span>
+          </h2>
+        </div>
+
+        <ul class="projects" id="projects">
+          <li class="project" data-cursor="view">
+            <a class="project__link" href="#" aria-label="Helios case study">
+              <span class="project__index mono">01</span>
+              <span class="project__title">Helios</span>
+              <span class="project__meta mono">
+                <span>Real-time analytics platform</span>
+                <span class="muted">Platform Engineering &middot; 2025</span>
+              </span>
+              <span class="project__tags mono">TypeScript / Go / Kafka</span>
+            </a>
+          </li>
+          <li class="project" data-cursor="view">
+            <a class="project__link" href="#" aria-label="Atlas case study">
+              <span class="project__index mono">02</span>
+              <span class="project__title">Atlas</span>
+              <span class="project__meta mono">
+                <span>Design system &amp; component library</span>
+                <span class="muted">Frontend Architecture &middot; 2024</span>
+              </span>
+              <span class="project__tags mono">React / Tokens / WebGL</span>
+            </a>
+          </li>
+          <li class="project" data-cursor="view">
+            <a class="project__link" href="#" aria-label="Meridian case study">
+              <span class="project__index mono">03</span>
+              <span class="project__title">Meridian</span>
+              <span class="project__meta mono">
+                <span>Distributed payments infrastructure</span>
+                <span class="muted">Backend Systems &middot; 2024</span>
+              </span>
+              <span class="project__tags mono">Rust / gRPC / Postgres</span>
+            </a>
+          </li>
+          <li class="project" data-cursor="view">
+            <a class="project__link" href="#" aria-label="Lumen case study">
+              <span class="project__index mono">04</span>
+              <span class="project__title">Lumen</span>
+              <span class="project__meta mono">
+                <span>AI developer tooling</span>
+                <span class="muted">Full-stack &middot; 2023</span>
+              </span>
+              <span class="project__tags mono">Node / LLMs / CLI</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <p class="section-head__eyebrow mono reveal">
+          <span class="star">✶</span> 02 &mdash; About
+        </p>
+        <div class="about__grid">
+          <p class="about__statement reveal">
+            I build software the way good architecture is drawn &mdash;
+            <span class="italic">deliberate</span>, quiet, and made to last. For
+            <span class="accent">eight years</span> I&rsquo;ve helped teams turn ambitious ideas
+            into systems that stay <span class="italic">calm</span> under load and a pleasure to
+            work in.
+          </p>
+          <div class="about__side reveal">
+            <p class="about__bio">
+              Currently independent, partnering with founders and product teams on
+              architecture, performance, and the craft details that make products feel
+              effortless. Previously building platforms at scale across fintech and
+              developer tools.
+            </p>
+            <ul class="about__stats mono">
+              <li><strong>8+</strong><span>Years building</span></li>
+              <li><strong>40+</strong><span>Products shipped</span></li>
+              <li><strong>12</strong><span>Teams scaled</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERTISE -->
+      <section class="expertise" id="expertise">
+        <div class="section-head">
+          <p class="section-head__eyebrow mono reveal">
+            <span class="star">✶</span> 03 &mdash; Expertise
+          </p>
+          <h2 class="section-head__title reveal">
+            What I do<br /><span class="italic muted">end to end.</span>
+          </h2>
+        </div>
+        <ul class="expertise__list">
+          <li class="expertise__item reveal">
+            <span class="expertise__num mono">(01)</span>
+            <h3 class="expertise__name">Systems Architecture</h3>
+            <p class="expertise__desc">
+              Designing distributed systems that scale predictably &mdash; from data models
+              and APIs to event pipelines and observability.
+            </p>
+          </li>
+          <li class="expertise__item reveal">
+            <span class="expertise__num mono">(02)</span>
+            <h3 class="expertise__name">Frontend Engineering</h3>
+            <p class="expertise__desc">
+              Fast, accessible interfaces and design systems &mdash; with the motion and
+              detail that make products feel alive.
+            </p>
+          </li>
+          <li class="expertise__item reveal">
+            <span class="expertise__num mono">(03)</span>
+            <h3 class="expertise__name">Performance &amp; Reliability</h3>
+            <p class="expertise__desc">
+              Profiling, caching, and resilience work that keeps experiences instant and
+              uptime boring &mdash; the good kind of boring.
+            </p>
+          </li>
+          <li class="expertise__item reveal">
+            <span class="expertise__num mono">(04)</span>
+            <h3 class="expertise__name">Technical Direction</h3>
+            <p class="expertise__desc">
+              Helping teams choose the right abstractions, pay down complexity, and ship
+              with confidence.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <p class="section-head__eyebrow mono reveal">
+          <span class="star">✶</span> 04 &mdash; Contact
+        </p>
+        <h2 class="contact__title">
+          <span class="reveal-line">Let&rsquo;s build</span>
+          <span class="reveal-line italic accent">something good.</span>
+        </h2>
+        <a class="contact__email" href="mailto:hello@gabrielaccetta.dev" data-cursor="hover">
+          hello@gabrielaccetta.dev
+        </a>
+        <div class="contact__socials mono">
+          <a href="https://github.com" target="_blank" rel="noopener" data-cursor="hover">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" data-cursor="hover">LinkedIn</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" data-cursor="hover">X / Twitter</a>
+          <a href="https://read.cv" target="_blank" rel="noopener" data-cursor="hover">Read.cv</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mono">
+      <span>&copy; 2026 Gabriel Accetta</span>
+      <span class="muted">Crafted with care &mdash; &amp; a little starlight</span>
+      <button class="footer__top" data-scroll-to="#top" data-cursor="hover">
+        Back to top <span class="arrow">&uarr;</span>
+      </button>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
