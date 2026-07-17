@@ -183,7 +183,7 @@ export class Starfield {
         uSize: { value: 1 },
         uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
         uColorA: { value: new THREE.Color(0xf3eee2) },
-        uColorB: { value: new THREE.Color(0xe2603a) },
+        uColorB: { value: new THREE.Color(0xd93b2b) },
       },
       vertexShader: VERT,
       fragmentShader: FRAG,

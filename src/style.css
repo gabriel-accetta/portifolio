@@ -11,8 +11,8 @@
   --muted-dim: #514c45;
   --line: rgba(236, 230, 219, 0.12);
   --line-soft: rgba(236, 230, 219, 0.07);
-  --accent: #e2603a;
-  --accent-bright: #f06a3f;
+  --accent: #d93b2b;
+  --accent-bright: #ec4530;
   --star: rgba(245, 240, 230, 0.95);
 
   --pad: clamp(1.25rem, 4vw, 4rem);
@@ -477,13 +477,13 @@ img {
   height: 7px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 0 rgba(226, 96, 58, 0.6);
+  box-shadow: 0 0 0 0 rgba(217, 59, 43, 0.6);
   animation: pulse 2.4s infinite;
 }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(226, 96, 58, 0.5); }
-  70% { box-shadow: 0 0 0 9px rgba(226, 96, 58, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(226, 96, 58, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(217, 59, 43, 0.5); }
+  70% { box-shadow: 0 0 0 9px rgba(217, 59, 43, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(217, 59, 43, 0); }
 }
 
 /* ---------- Marquee ---------- */
@@ -593,7 +593,7 @@ section {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(226, 96, 58, 0.06),
+    rgba(217, 59, 43, 0.06),
     transparent 60%
   );
   opacity: 0;
@@ -732,6 +732,8 @@ section {
 .contact__title .reveal-line {
   display: block;
   overflow: hidden;
+  padding-bottom: 0.18em;
+  margin-bottom: -0.18em;
 }
 .contact__email {
   font-family: var(--serif);
